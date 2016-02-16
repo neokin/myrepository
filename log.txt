@@ -1,0 +1,5 @@
+commit 77ab3d5dbddb6f81fc4e704f4443785cf8bc4e22
+Author: kirill <mazkirand@gmail.com>
+Date:   Tue Feb 9 12:03:59 2016 +0300
+
+    Add .gitignore
