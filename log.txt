@@ -1,3 +1,9 @@
+commit 78826e704e2a3cddedcf0086b6d0cbc37d593be2
+Author: kirill <mazkirand@gmail.com>
+Date:   Tue Feb 16 11:56:14 2016 +0300
+
+    Add status.txt
+
 commit 77ab3d5dbddb6f81fc4e704f4443785cf8bc4e22
 Author: kirill <mazkirand@gmail.com>
 Date:   Tue Feb 9 12:03:59 2016 +0300
