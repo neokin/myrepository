@@ -1,0 +1,47 @@
+﻿<!DOCTYPE html>
+
+<html>
+<head>
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+    <meta name="robots" content="noindex">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>Chat</title>
+    <link type="text/css" rel="stylesheet" href="chat.css" />
+</head>
+<body>
+    <h1>Welcome to Mazanov Chat</h1>
+
+    <div id="chatContainer">
+
+        <div id="chatTopBar" class="rounded"></div>
+        <div id="chatLineHolder"></div>
+    
+        <div id="chatUsers" class="rounded">
+            <span id="chatUserTitle" title="Снять выделение"><a href="#">Пользователи</a></span>
+            <select id="chatSelUsers" class="rounded" multiple size="18">
+            </select>
+        </div>
+        <div id="chatBottomBar" class="rounded">
+            <div class="tip"></div>
+        
+            <div id="chatLoginDiv">
+                <input id="chatUser" type="text" name="name" class="rounded" maxlength="16" placeholder="Введите ваше имя" />
+                <input id="chatLogin" type="button" class="blueButton" value="Войти" />
+            </div>
+    
+            <div id="chatSendDiv">
+                <input id="chatText" name="chatText" class="rounded" maxlength="255"  placeholder="Введите сообщение"/>
+                <input id="chatSend" type="button" class="blueButton" value="Отправить" />
+            </div>
+        </div>
+        
+        <input id="chatLoginId" type="hidden" />
+        <input id="chatLoginUser" type="hidden" />
+
+    </div>
+    
+    <script type="text/javascript" src="chat.js" ></script>
+
+</body>
+</html>
