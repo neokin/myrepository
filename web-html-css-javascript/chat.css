@@ -1,0 +1,223 @@
+﻿/* Main chat container */
+
+h1 {
+    font: Bold 150% 'Trebuchet MS' , Tahoma, Sans-serif;
+    color: #3366CC;
+    text-align: center;
+}
+
+#chatContainer {
+    width: 800px;
+    margin: 10px auto;
+    position: relative;
+}
+
+/* Top Bar */
+
+#chatTopBar {
+    height: 40px;
+    background: #d0d0d0 url('Images/solid_gray.jpg') repeat-x;
+    border: 1px solid #fff;
+    margin-bottom: 15px;
+    position: relative;
+    color: #777;
+    text-shadow: 1px 1px 0 #FFFFFF;
+}
+
+#chatTopBar .name {
+    position: absolute;
+    top: 10px;
+    left: 40px;
+}
+
+#chatTopBar img {
+    left: 9px;
+    position: absolute;
+    top: 8px;
+}
+
+/* Chats Line*/
+
+#chatLineHolder {
+    height: 370px;
+    width: 646px;
+    margin-bottom: 15px;
+}
+
+.chat {
+    background: #d5d5d5 url('Images/chat_line_bg.jpg') repeat-x;
+    min-height: 24px;
+    padding: 6px;
+    border: 1px solid #FFFFFF;
+    padding: 8px 6px 4px 37px;
+    position: relative;
+    margin: 0 10px 10px 0;
+}
+
+.chat span {
+    color: #777777;
+    text-shadow: 1px 1px 0 #FFFFFF;
+    font-size: 12px;
+}
+
+.chat .text {
+    color: #444444;
+    display: inline-block;
+    font-size: 15px;
+    overflow: hidden;
+    vertical-align: top;
+    width: 190px;
+}
+
+.chat .avatar {
+    background: url('Images/avatar_sm.png') no-repeat;
+    left: 7px;
+    position: absolute;
+    top: 7px;
+}
+
+.chat img {
+    display: block;
+    visibility: hidden;
+}
+
+.chat .time {
+    position: absolute;
+    right: 10px;
+    top: 12px;
+    font-size: 11px;
+}
+
+.chat .author {
+    margin-right: 6px;
+    font-size: 11px;
+}
+
+/* Chat User Area */
+
+#chatUsers, #chatSelUsers {
+    background-color: #D0D0D0; /*#777;*/ /*#202020;*/
+    border: 1px solid #CCCCCC;
+    height: 370px;
+    position: absolute;
+    right: 0;
+    top: 56px;
+    width: 150px;
+}
+
+#chatSelUsers {
+    top: 20px;
+    height: 350px;
+}
+#chatUserTitle a {
+    text-decoration: none;
+    font-weight: bold;
+    padding-left: 25px;
+    color: #666666;
+}
+
+/* Bottom Bar */
+
+#chatBottomBar {
+    background: #d0d0d0 url('Images/solid_gray.jpg') repeat-x;
+    position: relative;
+    padding: 10px;
+    border: 1px solid #fff;
+}
+
+#chatBottomBar .tip {
+    position: absolute;
+    width: 0;
+    height: 0;
+    border: 10px solid transparent;
+    border-bottom-color: #eeeeee;
+    top: -20px;
+    left: 20px;
+}
+
+#chatContainer input {
+    background: #dcdcdc url('Images/input_bg.jpg') repeat-x;
+    height: 26px;
+    font: 13px/26px Calibri,Arial,sans-serif;
+    color: #777;
+    border: 1px solid;
+    border-color: #c1c1c1 #eee #eee #c1c1c1;
+    text-shadow: 1px 1px 0 #E4E4E4;
+    padding: 0 5px;
+    margin-right: 5px;
+    width: 620px;
+    outline: none;
+}
+
+#chatSendDiv {
+    display: none;
+}
+
+input#chatText {
+    /* The chat submit text field */
+    width: 620px;
+}
+
+
+/* Additional styles */
+
+a.logoutButton {
+    background-color: #bbb;
+    border: 1px solid #eee !important;
+    color: #FFFFFF !important;
+    font-size: 12px;
+    padding: 5px 9px;
+    position: absolute;
+    right: 10px;
+    text-shadow: 1px 1px 0 #888;
+    top: 7px;
+    -moz-box-shadow: 0 0 7px #888 inset;
+    -webkit-box-shadow: 0 0 7px #888 inset;
+    box-shadow: 0 0 7px #888 inset;
+    text-decoration: none;
+}
+
+a.logoutButton:hover {
+    text-shadow: 1px 1px 0 #888;
+    -moz-box-shadow: 0 0 7px #666 inset;
+    -webkit-box-shadow: 0 0 7px #666 inset;
+    box-shadow: 0 0 7px #666 inset;
+}
+
+#chatContainer .blueButton {
+    background: url('Images/button_blue.png') no-repeat;
+    border: none !important;
+    color: #516D7F !important;
+    display: inline-block;
+    font-size: 13px;
+    height: 29px;
+    text-align: center;
+    text-shadow: 1px 1px 0 rgba(255, 255, 255, 0.4);
+    width: 75px;
+    margin: 0;
+    cursor: pointer;
+}
+
+#chatContainer .blueButton:hover {
+    background-position: left bottom;
+}
+
+.rounded {
+    -moz-border-radius: 4px;
+    -webkit-border-radius: 4px;
+    border-radius: 4px;
+}
+
+#chatErrorMessage {
+    width: 100%;
+    top: 0;
+    left: 0;
+    position: relative;
+    background-color: #ab0909;
+    border-bottom: 1px solid #d32a2a;
+    font-size: 23px;
+    padding: 16px;
+    text-align: center;
+    color: #fff;
+    text-shadow: 1px 1px 0 #940f0f;
+}
